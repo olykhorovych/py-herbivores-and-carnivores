@@ -2,8 +2,7 @@ class Animal:
     class AnimalList(list):
         def __repr__(self) -> str:
             return ", ".join(repr(animal) for animal in self)
-        
-    alive: AnimalList = []
+    alive: "AnimalList" = []
 
     def __init__(
             self,
